@@ -19,11 +19,7 @@ class PointsController {
       query.where('uf', String(uf));
     }
 
-    if (items) {
-      query.whereIn('point_items.item_id', parsedItems);
-    }
-
-    const points = await query.distinct().select('points.*');
+    const points = await query.whereIn('point_items.item_id', parsedItems).distinct().select('points.*');
     
     return response.json(points);
   }
