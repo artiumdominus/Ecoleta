@@ -60,7 +60,7 @@ Para executar o front-end mobile, você deve utilizar o Expo. O instale em tua m
 
 Instale o aplicativo do Expo em teu celular, e use os comandos para gerar o bundle:
 - ` $ expo install `
-- çs` $ expo start `
+- ` $ expo start `
 
 Por fim escaneie o QR code com o aplicativo do Expo.
 
