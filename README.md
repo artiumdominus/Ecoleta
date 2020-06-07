@@ -38,29 +38,29 @@ Enquanto que pelo app, um cidadão pode pesquisar por pontos de coleta próximos
 ### Servidor
 
 Com o Node instalado em tua máquina, vá para o diretório do servidor e instale as dependências:
-` $ npm install `
+- ` $ npm install `
 
 Para gerar e pré-popular o banco de dados sqlite execute os seguintes comandos:
-` $ npm run knex:migrate`
-` $ npm run knex:seed`
+- ` $ npm run knex:migrate`
+- ` $ npm run knex:seed`
 
 O seguinte comando enfim executa o servidor:
-` $ npm run dev `
+- ` $ npm run dev `
 
 ### Web
 
 Por um imprevisto, o front-end web foi mantido com Yarn, neste caso o use para instalar as dependências e executar:
-` $ yarn install `
-` $ yarn start `
+- ` $ yarn install `
+- ` $ yarn start `
 
 ### Mobile
 
 Para executar o front-end mobile, você deve utilizar o Expo. O instale em tua máquina com:
-` $ npm install -g expo-cli `
+- ` $ npm install -g expo-cli `
 
 Instale o aplicativo do Expo em teu celular, e use os comandos para gerar o bundle:
-` $ expo install `
-` $ expo start `
+- ` $ expo install `
+- çs` $ expo start `
 
 Por fim escaneie o QR code com o aplicativo do Expo.
 
