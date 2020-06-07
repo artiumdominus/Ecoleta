@@ -33,6 +33,41 @@ Enquanto que pelo app, um cidadão pode pesquisar por pontos de coleta próximos
   - [Feather](https://github.com/feathericons/feather)
   - [Axios](https://github.com/axios/axios)
 
+## Como executar para testes
+
+### Servidor
+
+Com o Node instalado em tua máquina, vá para o diretório do servidor e instale as dependências:
+` $ npm install `
+
+Para gerar e pré-popular o banco de dados sqlite execute os seguintes comandos:
+` $ npm run knex:migrate`
+` $ npm run knex:seed`
+
+O seguinte comando enfim executa o servidor:
+` $ npm run dev `
+
+### Web
+
+Por um imprevisto, o front-end web foi mantido com Yarn, neste caso o use para instalar as dependências e executar:
+` $ yarn install `
+` $ yarn start `
+
+### Mobile
+
+Para executar o front-end mobile, você deve utilizar o Expo. O instale em tua máquina com:
+` $ npm install -g expo-cli `
+
+Instale o aplicativo do Expo em teu celular, e use os comandos para gerar o bundle:
+` $ expo install `
+` $ expo start `
+
+Por fim escaneie o QR code com o aplicativo do Expo.
+
+Ps.: Para conseguir integrar corretamente o app com o servidor, é necessário trocar todos os arquivos onde há "localhost" pelo ip local da tua máquina.
+
+Obrigado pelo teu interesse em meu projeto. ♥
+
 <p align="center"><img src="https://lander.rocketseat.dev/uploads/nextlevelweek_18baaf82af.svg"/></p>
  <h4 align="center">NextLevelWeek 1.0</h4>
  
